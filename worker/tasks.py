@@ -25,7 +25,7 @@ import shutil;
 # We import this from a custom location and pylint doesn't know.
 from invoke import task, call; # pylint: disable=import-error
 
-MEDIASOUP_BUILDTYPE = os.getenv('MEDIASOUP_BUILDTYPE') or 'Release';
+MEDIASOUP_BUILDTYPE = os.getenv('MEDIASOUP_BUILDTYPE') or 'Debug';
 WORKER_DIR = os.path.dirname(os.path.abspath(
     inspect.getframeinfo(inspect.currentframe()).filename
 ));
